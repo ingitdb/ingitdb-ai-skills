@@ -31,6 +31,7 @@ All skills are prefixed with the plugin's manifest name. Users invoke them as:
 | [`list/`](list/SKILL.md) | `ingitdb list` | `collections`, `views` |
 | [`describe/`](describe/SKILL.md) | `ingitdb describe` | `collection`, `view` |
 | [`record/`](record/SKILL.md) | `ingitdb insert / select / update / delete` | `insert`, `select`, `update`, `delete` |
+| [`materialize/`](materialize/SKILL.md) | `ingitdb materialize` | `collections`, `views` |
 
 ## Pre-flight pattern
 
@@ -58,8 +59,8 @@ Every CLI-wrapper skill must verify that `ingitdb` is installed before invoking 
 
 The CLI exposes several additional commands not yet covered by a skill. They can be invoked directly (no skill required) — wrappers will be added as usage patterns emerge:
 
-`ci`, `docs`, `drop`, `materialize`, `pull`, `rebase`, `resolve`, `setup`, `version`.
+`ci`, `docs`, `drop`, `pull`, `rebase`, `resolve`, `setup`, `version`.
 
 ## Status
 
-**Shipped:** `install/` (infrastructure), `validate/`, `list/`, `describe/`, `record/` (CLI wrappers).
+**Shipped:** `install/` (infrastructure), `validate/`, `list/`, `describe/`, `record/`, `materialize/` (CLI wrappers).
