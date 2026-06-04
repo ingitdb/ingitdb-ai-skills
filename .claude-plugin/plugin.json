@@ -1,6 +1,6 @@
 {
   "name": "ingitdb",
-  "description": "inGitDB CLI plugin: skills that teach AI agents how to use the ingitdb CLI for Git-backed database operations — validate, list, describe, CRUD, and serve.",
+  "description": "inGitDB CLI plugin: skills that teach AI agents how to use the ingitdb CLI for Git-backed database operations — validate, list, describe, and CRUD.",
   "version": "0.0.1",
   "author": {
     "name": "inGitDB"

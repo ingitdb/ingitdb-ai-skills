@@ -1,6 +1,6 @@
 # inGitDB AI Plugin
 
-AI plugin for [inGitDB](https://ingitdb.com) — skills that teach AI agents how to use the `ingitdb` CLI for Git-backed database operations: schema validation, record CRUD, materialized views, and serving the database to AI agents over MCP.
+AI plugin for [inGitDB](https://ingitdb.com) — skills that teach AI agents how to use the `ingitdb` CLI for Git-backed database operations: schema validation, record CRUD, and materialized views.
 
 This repository contains the plugin source. It is installed on top of the [`ingitdb` CLI](https://github.com/ingitdb/ingitdb-cli); the CLI is a prerequisite.
 

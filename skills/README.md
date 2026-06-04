@@ -31,7 +31,6 @@ All skills are prefixed with the plugin's manifest name. Users invoke them as:
 | [`list/`](list/SKILL.md) | `ingitdb list` | `collections`, `views` |
 | [`describe/`](describe/SKILL.md) | `ingitdb describe` | `collection`, `view` |
 | [`record/`](record/SKILL.md) | `ingitdb insert / select / update / delete` | `insert`, `select`, `update`, `delete` |
-| [`serve/`](serve/SKILL.md) | `ingitdb serve` (also `ingitdb watch`) | `mcp`, `http`, `watch` |
 
 ## Pre-flight pattern
 
@@ -63,4 +62,4 @@ The CLI exposes several additional commands not yet covered by a skill. They can
 
 ## Status
 
-**Shipped:** `install/` (infrastructure), `validate/`, `list/`, `describe/`, `record/`, `serve/` (CLI wrappers).
+**Shipped:** `install/` (infrastructure), `validate/`, `list/`, `describe/`, `record/` (CLI wrappers).
