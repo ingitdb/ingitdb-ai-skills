@@ -9,8 +9,9 @@ This repository contains the plugin source. It is installed on top of the [`ingi
 | Directory | Description |
 |---|---|
 | [`skills/`](skills/README.md) | Agent skills — one per major `ingitdb` CLI surface area, progressively loaded per-verb |
-| [`commands/`](commands/install.md) | Slash-command aliases for skills |
 | [`.claude-plugin/`](.claude-plugin/plugin.json) | Claude Code plugin manifest |
+| [`.codex-plugin/`](.codex-plugin/plugin.json) | Codex plugin manifest |
+| [`plugin.json`](plugin.json) | Cursor Agent Plugin manifest |
 
 ## Install
 
@@ -25,7 +26,7 @@ Via the [Sneat AI marketplace](https://github.com/sneat-co/ai-marketplace):
 
 The `ingitdb` CLI must be on your `PATH` before any wrapper skill can run. Options:
 
-- Invoke `/ingitdb:install` inside Claude Code — the [install skill](skills/install/SKILL.md) shows the platform-appropriate install commands and waits for you to run them.
+- Invoke the `ingitdb-install` skill in a supporting native plugin host — the [install skill](skills/ingitdb-install/SKILL.md) shows the platform-appropriate install commands and waits for you to run them.
 - Or install directly per the [inGitDB CLI installation guide](https://github.com/ingitdb/ingitdb-cli#installation).
 
 Verify with `ingitdb version`.

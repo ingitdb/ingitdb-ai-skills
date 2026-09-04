@@ -6,10 +6,10 @@ This plugin follows the same design as the sibling [`specscore`](https://github.
 
 ## Invocation
 
-All skills are prefixed with the plugin's manifest name. Users invoke them as:
+Each skill has a product-qualified canonical name. Native hosts can display it with the plugin identity, for example:
 
 ```
-/ingitdb:<skill-name>
+ingitdb:ingitdb-<skill-name>
 ```
 
 ## Skill categories
@@ -21,16 +21,16 @@ All skills are prefixed with the plugin's manifest name. Users invoke them as:
 
 | Skill | Purpose |
 |---|---|
-| [`install/`](install/SKILL.md) | Show install instructions for the `ingitdb` CLI. Runtime prerequisite for every wrapper skill. |
+| [`ingitdb-install/`](ingitdb-install/SKILL.md) | Show install instructions for the `ingitdb` CLI. Runtime prerequisite for every wrapper skill. |
 
 ## Available CLI-wrapper skills
 
 | Skill | Wraps | Verbs / references |
 |---|---|---|
-| [`validate/`](validate/SKILL.md) | `ingitdb validate` | `full`, `definitions`, `records`, `diff` |
-| [`list/`](list/SKILL.md) | `ingitdb list` | `collections`, `views` |
-| [`describe/`](describe/SKILL.md) | `ingitdb describe` | `collection`, `view` |
-| [`record/`](record/SKILL.md) | `ingitdb insert / select / update / delete` | `insert`, `select`, `update`, `delete` |
+| [`ingitdb-validate/`](ingitdb-validate/SKILL.md) | `ingitdb validate` | `full`, `definitions`, `records`, `diff` |
+| [`ingitdb-list/`](ingitdb-list/SKILL.md) | `ingitdb list` | `collections`, `views` |
+| [`ingitdb-describe/`](ingitdb-describe/SKILL.md) | `ingitdb describe` | `collection`, `view` |
+| [`ingitdb-record/`](ingitdb-record/SKILL.md) | `ingitdb insert / select / update / delete` | `insert`, `select`, `update`, `delete` |
 
 ## Pre-flight pattern
 
@@ -47,7 +47,7 @@ Every CLI-wrapper skill must verify that `ingitdb` is installed before invoking 
 > If this check fails (exit `127` / `command not found`), stop and tell the user exactly:
 >
 > > The `ingitdb` CLI is not installed. Either:
-> > - invoke `/ingitdb:install` to see install options, or
+> > - invoke the `ingitdb-install` skill to see install options, or
 > > - install per <https://github.com/ingitdb/ingitdb-cli#installation>.
 > >
 > > Then retry your command.
@@ -62,4 +62,4 @@ The CLI exposes several additional commands not yet covered by a skill. They can
 
 ## Status
 
-**Shipped:** `install/` (infrastructure), `validate/`, `list/`, `describe/`, `record/` (CLI wrappers).
+**Shipped:** `ingitdb-install` (infrastructure), `ingitdb-validate`, `ingitdb-list`, `ingitdb-describe`, and `ingitdb-record` (CLI wrappers).

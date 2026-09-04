@@ -1,0 +1,24 @@
+{
+  "name": "ingitdb",
+  "version": "0.0.2",
+  "description": "inGitDB CLI skills for Git-backed database validation, discovery, schema inspection, and record CRUD.",
+  "author": {
+    "name": "inGitDB"
+  },
+  "homepage": "https://github.com/ingitdb/ingitdb-ai-skills",
+  "repository": "https://github.com/ingitdb/ingitdb-ai-skills",
+  "license": "MIT",
+  "keywords": ["ingitdb", "git", "database", "cli"],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "inGitDB",
+    "shortDescription": "Use the inGitDB CLI with Git-backed databases.",
+    "longDescription": "Skills for validating, exploring, describing, and editing Git-backed inGitDB databases through the inGitDB CLI.",
+    "developerName": "inGitDB",
+    "category": "Developer Tools",
+    "capabilities": ["Skills"],
+    "defaultPrompt": [
+      "Help me inspect and validate an inGitDB database."
+    ]
+  }
+}
