@@ -5,6 +5,5 @@
   "description": "inGitDB CLI skills for Git-backed database validation, discovery, schema inspection, and record CRUD.",
   "author": {
     "name": "inGitDB"
-  },
-  "skills": "./skills"
+  }
 }
