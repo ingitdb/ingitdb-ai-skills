@@ -58,7 +58,9 @@ Every CLI-wrapper skill must verify that `ingitdb` is installed before invoking 
 
 The CLI exposes several additional commands not yet covered by a skill. They can be invoked directly (no skill required) — wrappers will be added as usage patterns emerge:
 
-`ci`, `docs`, `drop`, `materialize`, `pull`, `rebase`, `resolve`, `setup`, `version`.
+`ci`, `demo`, `docs`, `drop`, `materialize`, `pull`, `rebase`, `resolve`, `setup`, `version`.
+
+`demo install` creates the TODO demo database (To buy and To watch lists, shared with OpenVaultDB's `ovdb demo install`) in a new Git repository, `./todo-demo` by default; `--format=json` returns the folder, commit and next steps for agents. See [`demo install`](https://github.com/ingitdb/ingitdb-cli/blob/main/docs/cli/commands/demo.md).
 
 ## Status
 
