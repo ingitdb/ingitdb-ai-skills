@@ -1,7 +1,6 @@
 ---
-name: install
-description: Show install instructions for the ingitdb CLI. Use when `ingitdb` is not on PATH, when another skill reports `command not found: ingitdb`, or when the user asks how to install, reinstall, or update the CLI.
-user-invocable: true
+name: ingitdb-install
+description: "Show install instructions for the ingitdb CLI. Use when `ingitdb` is not on PATH, when another skill reports `command not found: ingitdb`, or when the user asks how to install, reinstall, or update the CLI."
 ---
 
 # Install the ingitdb CLI

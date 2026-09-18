@@ -1,7 +1,6 @@
 ---
-name: record
+name: ingitdb-record
 description: Create, read, update, and delete records in an inGitDB collection. Use for SQL-style INSERT, SELECT, UPDATE, and DELETE against `map[string]any` collections, locally or against a remote Git repo.
-user-invocable: true
 ---
 
 # inGitDB record CRUD
@@ -14,7 +13,7 @@ Wraps the four record-level commands in the `ingitdb` CLI: `insert`, `select`, `
 command -v ingitdb >/dev/null 2>&1
 ```
 
-On miss, invoke `/ingitdb:install` and stop until `ingitdb version` succeeds.
+On miss, invoke the `ingitdb-install` skill and stop until `ingitdb version` succeeds.
 
 ## ID format
 
