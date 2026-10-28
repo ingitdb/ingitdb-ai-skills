@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ingitdb",
+  "version": "0.0.2",
+  "description": "inGitDB CLI skills for Git-backed database validation, discovery, schema inspection, and record CRUD.",
+  "author": {
+    "name": "inGitDB"
+  }
+}

@@ -1,7 +1,6 @@
 ---
-name: list
+name: ingitdb-list
 description: List database objects in an inGitDB database — collections (and their nested paths) or views. Use to discover what's in a database before querying or describing individual objects.
-user-invocable: true
 ---
 
 # inGitDB list
@@ -16,7 +15,7 @@ Verify the CLI is installed:
 command -v ingitdb >/dev/null 2>&1
 ```
 
-On miss, instruct the user to invoke `/ingitdb:install` or install per <https://github.com/ingitdb/ingitdb-cli#installation>, then retry.
+On miss, instruct the user to invoke the `ingitdb-install` skill or install per <https://github.com/ingitdb/ingitdb-cli#installation>, then retry.
 
 ## Pick a verb
 

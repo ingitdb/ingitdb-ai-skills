@@ -1,7 +1,6 @@
 ---
-name: validate
+name: ingitdb-validate
 description: Validate an inGitDB database — check schema definitions, record conformance, and rebuild materialized views. Use when running CI checks, after schema edits, or before committing record changes.
-user-invocable: true
 ---
 
 # inGitDB validate
@@ -19,7 +18,7 @@ command -v ingitdb >/dev/null 2>&1
 If this check fails (exit `127` / `command not found`), stop and tell the user exactly:
 
 > The `ingitdb` CLI is not installed. Either:
-> - invoke `/ingitdb:install` to see install options, or
+> - invoke the `ingitdb-install` skill to see install options, or
 > - install directly per <https://github.com/ingitdb/ingitdb-cli#installation>.
 >
 > Then retry your command.

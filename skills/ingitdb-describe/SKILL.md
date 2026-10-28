@@ -1,7 +1,6 @@
 ---
-name: describe
+name: ingitdb-describe
 description: Describe a schema object in an inGitDB database — a collection (columns, types, indexes) or a view (definition). Use to understand structure before reading or writing records.
-user-invocable: true
 ---
 
 # inGitDB describe
@@ -14,7 +13,7 @@ Wraps `ingitdb describe <kind> <name>` — print the schema of a collection or v
 command -v ingitdb >/dev/null 2>&1
 ```
 
-On miss, invoke `/ingitdb:install` and stop until `ingitdb version` succeeds.
+On miss, invoke the `ingitdb-install` skill and stop until `ingitdb version` succeeds.
 
 ## Pick a verb
 
