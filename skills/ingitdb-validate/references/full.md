@@ -53,7 +53,8 @@ ingitdb validate --path=/path/to/your/db
   keeps its records in `$records` (where older storage drivers wrote them) are an error that names
   the found path, the file count and the expected path. Fix it by moving the files, or by setting
   `record_file.records_dir: "."` on the parent and moving its records out of `$records/`.
-- A `WARNING:` line (for example a parent directory that is a symbolic link leading outside the
-  database, whose records are not read) does not change the exit code; report it to the user.
+- A parent directory that is a symbolic link leading outside the database is an error: its records
+  are not read, so the pass fails. Replace the link with the directory, or move the data inside.
+- A `WARNING:` line does not change the exit code; report it to the user.
 - For a collection with `record_file.key_encoding: tilde-v1`, validate also reports file names the encoding never writes (`a b.yaml`, `x~zz.yaml`), names that differ only in letter case (record files and parent record directories), and file names over 255 bytes.
 - A non-zero exit means at least one violation was reported on stdout/stderr — surface the message to the user verbatim.
