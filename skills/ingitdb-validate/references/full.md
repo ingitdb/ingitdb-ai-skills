@@ -35,4 +35,5 @@ ingitdb validate --path=/path/to/your/db
 ## Notes
 
 - Validation rebuilds the `$views/` directory in the same pass.
+- For a collection with `record_file.key_encoding: tilde-v1`, validate also reports file names the encoding never writes (`a b.yaml`, `x~zz.yaml`), names that differ only in letter case (record files and parent record directories), and file names over 255 bytes.
 - A non-zero exit means at least one violation was reported on stdout/stderr — surface the message to the user verbatim.
